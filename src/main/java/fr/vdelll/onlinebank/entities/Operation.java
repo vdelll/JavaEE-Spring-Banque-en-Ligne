@@ -37,9 +37,8 @@ public abstract class Operation implements Serializable {
 	}
 
 
-	public Operation(Long numero, Date dateOperation, double montant, Compte compte) {
+	public Operation(Date dateOperation, double montant, Compte compte) {
 		super();
-		this.numero = numero;
 		this.dateOperation = dateOperation;
 		this.montant = montant;
 		this.compte = compte;
