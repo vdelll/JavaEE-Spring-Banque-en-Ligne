@@ -41,7 +41,7 @@ public class OnlinebankApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Client c1 = clientRepository.save(new Client("jean", "jean@gmail.com"));
+		/*Client c1 = clientRepository.save(new Client("jean", "jean@gmail.com"));
 		Client c2 = clientRepository.save(new Client("paul", "paul@gmail.com"));
 		
 		Compte cp1 = compteRepository.save(new CompteCourant("c1", new Date(), 90000, c1, 6000));
@@ -57,7 +57,7 @@ public class OnlinebankApplication implements CommandLineRunner {
 		operationRepository.save(new Versement(new Date(), 4200, cp2));
 		operationRepository.save(new Versement(new Date(), 400, cp2));
 		
-		banqueMetier.verser("c1", 600); 
+		banqueMetier.verser("c1", 600); */
 		
 	}
 
