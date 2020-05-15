@@ -57,7 +57,7 @@ public class OnlinebankApplication implements CommandLineRunner {
 		operationRepository.save(new Versement(new Date(), 4200, cp2));
 		operationRepository.save(new Versement(new Date(), 400, cp2));
 		
-		banqueMetier.verser("c1", 600);
+		banqueMetier.verser("c1", 600); 
 		
 	}
 

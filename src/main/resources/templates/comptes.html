@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Votre Banque</title>
+<link rel="stylesheet" type="text/css"
+	href="../static/css/bootstrap.min.css"
+	th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" href="../static/css/myStyle.css"
+	th:href="@{/css/myStyle.css}" />
+</head>
+<body>
+	<div th:insert="header :: head"></div>
+
+	<div class="card-columns">
+		<div class="card p-3 border-light">
+			<div class="card-header text-white bg-dark">Consultation d'un
+				compte</div>
+			<div class="card-body">
+				<form th:action="@{/consultercompte}" method="get">
+
+					<div>
+						<label>Code compte :</label> <input type="text" name="codeCompte" />
+						<button type="submit" class="btn btn-secondary">Ok</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+		<div class="card p-3 border-light">
+			<div class="card-header text-white bg-dark">Informations sur le
+				compte</div>
+			<div class="card-body"></div>
+		</div>
+
+		<div class="card p-3 border-light">
+			<div class="card-header text-white bg-dark">Opérations sur le
+				compte</div>
+			<div class="card-body"></div>
+		</div>
+		<div class="card p-3 border-light">
+			<div class="card-header text-white bg-dark">Liste des
+				opérations</div>
+			<div class="card-body"></div>
+		</div>
+	</div>
+	</div>
+
+	<div th:insert="footer :: foot"></div>
+</body>
+</html>
