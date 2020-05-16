@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
+<head>
+<meta charset="UTF-8">
+</head>
 <body>
 	<div id="header" th:fragment="head">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -12,6 +14,10 @@
 					<li class="nav-item"><a class="nav-link" th:href="@{/comptes}">Comptes</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" th:href="@{/clients}">Clients</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav navbar-right">
+					<li class="nav-item"><a class="nav-link" th:href="@{/login?logout}">Déconnexion</a>
 					</li>
 				</ul>
 			</div>

@@ -130,7 +130,7 @@
 			<div class="container">
 				<ul class="nav nav-pills">
 					<li class="nav-item" th:each="p,status : ${pages}">
-						<button class="nav-link mybtn btn" th:href="@{/consultercompte(codeCompte=${codeCompte}, page=${status.index})}" th:text="${status.index}"></button>
+						<a class="nav-link mybtn btn" th:href="@{/consultercompte(codeCompte=${codeCompte}, page=${status.index})}" th:text="${status.index}"></a>
 					</li>
 				</ul>
 			</div>

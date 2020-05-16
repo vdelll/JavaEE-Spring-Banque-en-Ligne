@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Authentification</title>
+<link rel="stylesheet" type="text/css"
+	href="../static/css/bootstrap.min.css"
+	th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" href="../static/css/myStyle.css"
+	th:href="@{/css/myStyle.css}" />
+</head>
+<body>
+	<div class="card mx-auto spacer40" style="width: 18rem;">
+		<div class="card-body">
+			<h5 class="card-title">Authentification</h5>
+			<form th:action="@{/login}" method="post">
+				<div>
+					<label>Identifiant </label> <input type="text" name="username" />
+				</div>
+				<div>
+					<label>Mot de passe </label> <input type="password" name="password" />
+				</div>
+				<br/>
+				<button class="btn btn-secondary" type="submit">Connexion</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
