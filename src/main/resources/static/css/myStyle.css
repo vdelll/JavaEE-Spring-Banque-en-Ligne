@@ -1,3 +1,14 @@
 .card-columns {
   column-count: 2;
 }
+
+ /* Style the buttons */
+.mybtn {
+  margin-left:10px;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active, .mybtn:hover {
+  background-color: #666;
+  color: white;
+} 
