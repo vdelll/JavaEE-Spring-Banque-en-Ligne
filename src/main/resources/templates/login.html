@@ -11,8 +11,14 @@
 </head>
 <body>
 	<div class="card mx-auto spacer40" style="width: 18rem;">
+	<div class="card-header text-white bg-dark">Authentification</div>
 		<div class="card-body">
-			<h5 class="card-title">Authentification</h5>
+			<div class="red" th:if="${param.error}">
+				Identifiant ou mot de passe incorrecte.
+			</div>
+			<div class="red" th:if="${param.logout}">
+				Utilisateur déconnecté.
+			</div>
 			<form th:action="@{/login}" method="post">
 				<div>
 					<label>Identifiant </label> <input type="text" name="username" />

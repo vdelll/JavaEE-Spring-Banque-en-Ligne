@@ -16,5 +16,10 @@ public class SecurityController {
 	public String login() {
 		return "login";
 	}
+	
+	@RequestMapping(value = "/403")
+	public String accessDenied() {
+		return "403";
+	}
 
 }
